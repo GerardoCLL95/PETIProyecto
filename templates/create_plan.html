@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Plan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card mt-5">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Create New Plan</h2>
+                        <form action="/create_plan" method="post">
+                            <div class="mb-3">
+                                <label for="mission" class="form-label">Misión:</label>
+                                <input type="text" name="mission" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="vision" class="form-label">Visión:</label>
+                                <input type="text" name="vision" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="values" class="form-label">Valores (separados por comas):</label>
+                                <input type="text" name="values" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="objectives" class="form-label">Objetivos (separados por comas):</label>
+                                <input type="text" name="objectives" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="internal_external_analysis" class="form-label">Análisis Interno y Externo: (separados por comas)</label>
+                                <input type="text" name="internal_external_analysis" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="value_chain" class="form-label">Cadena de Valor:(separados por comas)</label>
+                                <input type="text" name="value_chain" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="participation_matrix" class="form-label">Matriz de Participación:(numeros separados por comas "1,2,3,4")</label>
+                                <input type="text" name="participation_matrix" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="porters_five_forces" class="form-label">Las 5 Fuerzas de Porter:</label>
+                                <input type="text" name="porters_five_forces" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pest" class="form-label">PEST:</label>
+                                <input type="text" name="pest" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="strategy_identification" class="form-label">Identificación de Estrategia:</label>
+                                <input type="text" name="strategy_identification" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="came_matrix" class="form-label">Matriz CAME:</label>
+                                <input type="text" name="came_matrix" class="form-control" required>
+                            </div>
+                            <div class="d-grid">
+                                <input type="submit" value="Create Plan" class="btn btn-primary">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
